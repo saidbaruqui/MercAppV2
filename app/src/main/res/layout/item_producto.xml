@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:elevation="4dp"
+    android:background="@color/blanco_hueso">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/azul_pastel"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Icono de advertencia si stock bajo -->
+        <ImageView
+            android:id="@+id/imgAdvertencia"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="end"
+            android:visibility="gone"
+            app:srcCompat="@android:drawable/ic_dialog_alert"
+            app:tint="@android:color/holo_red_dark" />
+
+        <!-- Nombre del producto -->
+        <TextView
+            android:id="@+id/textNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre del producto"
+            android:textColor="@color/naranja_suave"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Categoría -->
+        <TextView
+            android:id="@+id/textCategoria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Categoría"
+            android:textColor="@color/texto_principal"
+            android:textSize="14sp" />
+
+        <!-- Precio -->
+        <TextView
+            android:id="@+id/textPrecio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$0.00"
+            android:textColor="@color/texto_principal"
+            android:textSize="14sp" />
+
+        <!-- Stock -->
+        <TextView
+            android:id="@+id/textStock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stock: 0"
+            android:textColor="@color/texto_principal"
+            android:textSize="14sp" />
+
+        <!-- Botones -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <!-- Editar -->
+            <Button
+                android:id="@+id/btnEditar"
+                style="@style/PrimaryButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/rounded_button_green"
+                android:backgroundTint="@color/verde_manzana"
+                android:paddingStart="24dp"
+                android:paddingTop="8dp"
+                android:paddingEnd="24dp"
+                android:paddingBottom="8dp"
+                android:text="Editar"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <!-- Eliminar -->
+            <Button
+                android:id="@+id/btnEliminar"
+                style="@style/PrimaryButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_button_yellow"
+                android:paddingStart="24dp"
+                android:paddingTop="8dp"
+                android:paddingEnd="24dp"
+                android:paddingBottom="8dp"
+                android:text="Eliminar"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btnPedir"
+                style="@style/PrimaryButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/rounded_button_orange"
+                android:paddingStart="24dp"
+                android:paddingTop="8dp"
+                android:paddingEnd="24dp"
+                android:paddingBottom="8dp"
+                android:textSize="12sp"
+                android:text="Pedir"
+                android:textColor="@color/black"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

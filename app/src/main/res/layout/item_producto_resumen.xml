@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:background="#E0F7FA">
+
+    <TextView
+        android:id="@+id/textNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nombre"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/textCategoria"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Categoría"
+        android:textSize="14sp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/textPrecio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Precio"
+        android:textSize="14sp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/textStock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Stock"
+        android:textSize="14sp"
+        android:textColor="@color/black"/>
+</LinearLayout>

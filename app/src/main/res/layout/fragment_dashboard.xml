@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blanco_hueso"
+    tools:context=".ui.dashboard.DashboardFragment">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            android:padding="16dp"
+            android:layout_marginTop="50dp">
+            <!-- Título -->
+            <TextView
+                android:id="@+id/tvTituloDashboard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Resumen del Día"
+                android:textColor="@color/naranja_suave"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:gravity="center"
+                android:paddingBottom="16dp" />
+
+            <!-- Ventas del día -->
+            <TextView
+                android:id="@+id/tvVentasDia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ventas hoy: $0.00"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:paddingBottom="12dp" />
+
+
+
+            <!-- Stock bajo -->
+            <TextView
+                android:id="@+id/tvStockBajo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Productos con stock bajo: 0"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:paddingBottom="16dp" />
+
+            <!-- Gráfico de ventas reciente (imagen de relleno por ahora) -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ventas recientes"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:paddingBottom="8dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerVentasRecientes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

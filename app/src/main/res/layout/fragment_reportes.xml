@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blanco_hueso"
+    tools:context=".ui.reportes.ReportesFragment">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:id="@+id/layoutReportes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginTop="16dp">
+
+            <!-- Título -->
+            <TextView
+                android:id="@+id/tvTituloReportes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Reportes y Estadísticas"
+                android:textColor="@color/naranja_suave"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:paddingBottom="16dp" />
+
+            <!-- Productos más vendidos -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Productos más vendidos"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:paddingBottom="8dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerMasVendidos"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:backgroundTint="@color/azul_pastel"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Ventas por día/semana/mes (imagen simulada) -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ventas por periodo"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:paddingBottom="8dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerVentasPeriodo"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:backgroundTint="@color/azul_pastel"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Productos con mayor rotación -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Productos con mayor rotación"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:paddingBottom="8dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerRotacion"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:backgroundTint="@color/azul_pastel"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Botón Exportar -->
+            <Button
+                android:id="@+id/btnExportar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Exportar reporte (PDF o Excel)"
+                android:textColor="@color/black"
+                android:backgroundTint="@color/verde_manzana"
+                android:layout_marginTop="12dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/azul_pastel"
+    android:orientation="horizontal"
+    android:padding="12dp">
+
+    <TextView android:id="@+id/textNombre"
+        android:layout_width="0dp" android:layout_height="wrap_content"
+        android:layout_weight="2" android:text="Nombre"
+        android:textColor="@color/black"/>
+
+    <TextView android:id="@+id/textPrecio"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="$0.00" android:layout_marginEnd="8dp"
+        android:textColor="@color/black"/>
+
+    <TextView android:id="@+id/textStock"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="Stock: 0" android:layout_marginEnd="8dp"
+        android:textColor="@color/black"/>
+
+    <Button android:id="@+id/btnAgregar"
+        style="@style/PrimaryButton"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="Agregar" />
+</LinearLayout>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutPedido"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blanco_hueso"
+    android:padding="24dp">
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/textTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hacer Pedido"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/naranja_suave"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Fecha del pedido con ícono -->
+    <LinearLayout
+        android:id="@+id/layoutFecha"
+        android:layout_width="365dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/azul_pastel"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textTitulo">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="Ícono de calendario"
+            android:src="@android:drawable/ic_menu_today"
+            app:tint="@color/black" />
+
+        <TextView
+            android:id="@+id/textFecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seleccionar fecha"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- Selector de proveedor -->
+    <Spinner
+        android:id="@+id/spinnerProveedor"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/azul_pastel"
+        app:layout_constraintTop_toBottomOf="@id/layoutFecha"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Productos seleccionados -->
+    <TextView
+        android:id="@+id/textProductos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Productos seleccionados:"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/spinnerProveedor"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <HorizontalScrollView
+        android:id="@+id/scrollChips"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:contentDescription="Lista de productos"
+        app:layout_constraintTop_toBottomOf="@id/textProductos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:id="@+id/chipsProductos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="4dp" />
+    </HorizontalScrollView>
+
+    <!-- Switch entregado -->
+    <LinearLayout
+        android:id="@+id/layoutSwitch"
+        android:layout_width="359dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/scrollChips">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:text="Entregado"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <Switch
+            android:id="@+id/switchEntregado"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:contentDescription="Marcar como entregado" />
+    </LinearLayout>
+
+    <!-- Botón guardar pedido -->
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Guardar Pedido"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/verde_manzana"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/layoutSwitch"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- FAB agregar proveedor -->
+    <ImageButton
+        android:id="@+id/fabAgregarProveedor"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_margin="24dp"
+        android:src="@android:drawable/ic_input_add"
+        android:contentDescription="Agregar proveedor"
+        app:tint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

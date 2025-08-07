@@ -1,0 +1,109 @@
+<resources>
+    <string name="app_name">MercAppV2</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- LOGin -->
+    <string name="agregar_producto">Iniciar sesión</string>
+    <string name="loguin_nombre">Ingresar nombre de usuario</string>
+    <string name="loguin_password">Ingresar contraseña</string>
+    <string name="btn_login">Entrar</string>
+
+    <string name="tituloAgregar">Agregar producto</string>
+    <string name="hint_nombre">Ingresar nombre del producto</string>
+    <string name="hint_precio">Ingresar precio</string>
+    <string name="hint_stock">Ingresar cantidad en stock</string>
+    <string name="hint_categoria">Seleccionar categoría</string>
+
+
+    <string-array name="categorias_producto">
+        <item>Seleccionar categoría</item>
+        <item>Granos</item>
+        <item>Lácteos</item>
+        <item>Bebidas</item>
+        <item>Snacks</item>
+        <item>Higiene</item>
+    </string-array>
+        <!-- MainActivity y menú drawer -->
+
+        <string name="menu_inventario">Inventario</string>
+        <string name="menu_ventas">Ventas</string>
+        <string name="menu_pedidos">Pedidos</string>
+        <string name="menu_reportes">Reportes</string>
+        <string name="menu_perfil">Perfil</string>
+        <string name="menu_cerrar_sesion">Cerrar sesión</string>
+
+        <!-- InventarioFragment -->
+        <string name="inventario_titulo">Inventario de Productos</string>
+        <string name="buscar_producto">Buscar producto</string>
+        <string name="producto_nombre">Nombre del producto</string>
+        <string name="producto_categoria">Categoría</string>
+        <string name="producto_precio">Precio</string>
+        <string name="producto_stock">Stock</string>
+        <string name="btn_editar">Editar</string>
+        <string name="btn_eliminar">Eliminar</string>
+        <string name="btn_pedir">Pedir</string>
+        <string name="fab_agregar_producto">Agregar producto</string>
+        <string name="producto_eliminado">Producto eliminado correctamente</string>
+        <string name="advertencia_stock_bajo">¡Stock bajo!</string>
+
+        <!-- AgregarProductoActivity -->
+        <string name="titulo_agregar_producto">Agregar producto</string>
+        <string name="nombre_producto">Nombre</string>
+        <string name="categoria_producto">Categoría</string>
+        <string name="precio_producto">Precio</string>
+        <string name="stock_producto">Stock</string>
+        <string name="btn_guardar">Guardar</string>
+        <string name="mensaje_guardado">Producto agregado</string>
+        <string name="mensaje_error_guardado">Error al guardar</string>
+
+        <!-- EditarProductoActivity -->
+        <string name="titulo_editar_producto">Editar producto</string>
+        <string name="mensaje_editado">Producto actualizado</string>
+        <string name="mensaje_eliminado">Producto eliminado</string>
+        <string name="confirmar_eliminar_titulo">¿Eliminar producto?</string>
+        <string name="confirmar_eliminar_mensaje">¿Seguro que deseas eliminar este producto?</string>
+        <string name="si">Sí</string>
+        <string name="no">No</string>
+
+        <!-- VentasFragment -->
+        <string name="ventas_titulo">Registrar Venta</string>
+        <string name="btn_registrar_venta">Registrar</string>
+        <string name="venta_exitosa">Venta registrada</string>
+        <string name="venta_error">Error al registrar venta</string>
+
+        <!-- PedidosFragment -->
+        <string name="pedidos_titulo">Pedidos a proveedor</string>
+        <string name="btn_agregar_pedido">Nuevo pedido</string>
+        <string name="pedido_registrado">Pedido registrado</string>
+
+        <!-- ReportesFragment -->
+        <string name="reportes_titulo">Estadísticas y Reportes</string>
+        <string name="reporte_ventas">Reporte de Ventas</string>
+        <string name="reporte_pedidos">Reporte de Pedidos</string>
+
+        <!-- Usuario / Roles -->
+        <string name="rol_admin">Administrador</string>
+        <string name="rol_empleado">Empleado</string>
+
+        <!-- Alertas -->
+        <string name="alerta_producto_no_encontrado">Producto no encontrado</string>
+        <string name="mensaje_no_hay_productos">No hay productos disponibles</string>
+        <string name="mensaje_agregar_primero">Agrega un producto primero</string>
+
+        <!-- Genéricos -->
+        <string name="volver">Volver</string>
+        <string name="cancelar">Cancelar</string>
+       <string name="buscarproducto">Buscar producto</string>
+
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

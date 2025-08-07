@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="24dp"
+    android:background="#FFF8E7">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Título -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Agregar proveedor"
+            android:textColor="#FF9800"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingBottom="16dp" />
+
+        <!-- Nombre de la empresa -->
+        <EditText
+            android:id="@+id/etNombreEmpresa"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="8dp"
+            android:background="#AEE2FF"
+            android:hint="Nombre de la empresa"
+            android:padding="12dp"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <!-- Teléfono -->
+        <EditText
+            android:id="@+id/etTelefono"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:layout_marginTop="8dp"
+            android:background="#AEE2FF"
+            android:hint="Teléfono"
+            android:inputType="phone"
+            android:padding="12dp"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <!-- Email -->
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:layout_marginTop="8dp"
+            android:background="#AEE2FF"
+            android:hint="Correo electrónico"
+            android:inputType="textEmailAddress"
+            android:padding="12dp"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <!-- Productos suministrados -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:text="Productos que suministra:"
+            android:textColor="#212121"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chipGroupProductosProveedor"
+            app:chipSpacing="8dp"
+            android:singleLine="false"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_marginTop="8dp" />
+
+        <!-- Botón Agregar -->
+        <Button
+            android:id="@+id/btnAgregarProveedor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Agregar"
+            android:layout_marginTop="24dp"
+            android:background="#B5E48C"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:padding="16dp" />
+
+    </LinearLayout>
+</ScrollView>

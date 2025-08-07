@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="12dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/azul_pastel"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvNombreProducto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Producto"
+        android:textStyle="bold"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/tvCantidadVendida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cantidad"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/tvTotalVenta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total"
+        android:textColor="@color/black" />
+</LinearLayout>
